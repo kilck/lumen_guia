@@ -34,8 +34,8 @@ trait ApiControllerTrait
 
         $where = $data['where'] ?? [];
         $like = null;
-        if (!is_array($data['like'])){
-            $like = $data['like']
+        if (!empty($data['like']) and is_array($data['like'])){
+            $like = $data['like'];
 
             $key = key(reset($like));
             $like[0] = $key;
@@ -50,10 +50,18 @@ trait ApiControllerTrait
                 }
                 return $query;
             })
-            ->where($where);
+            ->where($where)
             ->with($this->relationships())
             ->paginate($limit);
         return response()->json($reseults);
+    }
+
+    public function show($id)
+    {
+        $result = $this->model
+            ->with($this->relationships())
+            ->findOrFail($id);
+         return response()->json($result);
     }
 
     protected  function relationships()

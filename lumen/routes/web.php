@@ -17,4 +17,5 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1'], function () use ($router){
     $router->get('restaurants','RestaurantsController@index');
+    $router->get('restaurants/{id}','RestaurantsController@show');
 });
