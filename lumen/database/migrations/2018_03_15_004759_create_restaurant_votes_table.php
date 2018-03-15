@@ -15,6 +15,11 @@ class CreateRestaurantVotesTable extends Migration
     {
         Schema::create('restaurant_votes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('points');
+            $table->text('comment');
+            $table->text('reply');
+            $table->integer('user_id');
+            $table->integer('restaurant_id');
             $table->timestamps();
         });
     }

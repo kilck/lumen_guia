@@ -15,7 +15,8 @@ class CreateCategoriesRestaurantsTable extends Migration
     {
         Schema::create('categories_restaurants', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer('category_id');
+            $table->integer('restaurant_id');
         });
     }
 

@@ -15,6 +15,12 @@ class CreateDishesTable extends Migration
     {
         Schema::create('dishes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('description');
+            $table->integer('price')->default(0);
+            $table->integer('vote_qtd')->default(0);
+            $table->integer('points')->default(0);
+            $table->integer('restaurant_id');
             $table->timestamps();
         });
     }
