@@ -70,6 +70,14 @@ trait ApiControllerTrait
         return response()->json($result);
     }
 
+    public function update(Request $request, $id)
+    {
+        $result = $this->model->findOrFail($id);
+        $result->update($request->all());
+        return response()->json($result);
+    }
+
+
     protected  function relationships()
     {
         if (isset($this->relationships)){
