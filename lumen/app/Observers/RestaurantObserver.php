@@ -19,12 +19,12 @@ class RestaurantObserver
 
     public function deleting(Restaurant $model)
     {
-
+        $this->removeFile($model);
     }
 
     public function updating(Restaurant $model)
     {
-
+        $this->updateFile($model);
     }
 
 }

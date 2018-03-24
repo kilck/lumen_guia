@@ -367,6 +367,7 @@ class ComposerStaticInit0894f2a94742efcb24b5a57cdab31177
     );
 
     public static $classMap = array (
+        'AddPhotoToRestaurantesTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_24_123216_add_photo_to_restaurantes_table.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'CreateCategoriesRestaurantsTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_15_004904_create_categories_restaurants_table.php',

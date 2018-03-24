@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddPhotoToRestaurantesTable' => $baseDir . '/database/migrations/2018_03_24_123216_add_photo_to_restaurantes_table.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
     'CreateCategoriesRestaurantsTable' => $baseDir . '/database/migrations/2018_03_15_004904_create_categories_restaurants_table.php',
