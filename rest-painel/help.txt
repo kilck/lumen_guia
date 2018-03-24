@@ -1,0 +1,7 @@
+#Criando painel de gerenciamento de restaurante
+	npm install -g @angular/cli
+	ng new reser-painel
+	npm start
+#Instalando Materialize CSS
+		npm install --save materialize-css
+		ng eject (npm run ng <command>)
