@@ -25,7 +25,7 @@ trait UploadObserverTrait
             $previous_image = $model->getOriginal($field);
             $this->upload($model);
 
-            Storage::delete($this->path . $$previous_image);
+            Storage::delete($this->path . $previous_image);
         }
     }
     protected function upload($model)

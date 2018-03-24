@@ -1,17 +1,17 @@
 [
     {
         "name": "aws/aws-sdk-php",
-        "version": "3.52.29",
-        "version_normalized": "3.52.29.0",
+        "version": "3.52.32",
+        "version_normalized": "3.52.32.0",
         "source": {
             "type": "git",
             "url": "https://github.com/aws/aws-sdk-php.git",
-            "reference": "51efd3a7cda92f245ccf39fea03227e0eb473c93"
+            "reference": "c10b8f60a5da9ad4d7fa9f890186632a4c025d1b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/51efd3a7cda92f245ccf39fea03227e0eb473c93",
-            "reference": "51efd3a7cda92f245ccf39fea03227e0eb473c93",
+            "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c10b8f60a5da9ad4d7fa9f890186632a4c025d1b",
+            "reference": "c10b8f60a5da9ad4d7fa9f890186632a4c025d1b",
             "shasum": ""
         },
         "require": {
@@ -42,7 +42,7 @@
             "ext-curl": "To send requests using cURL",
             "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages"
         },
-        "time": "2018-03-20T21:15:39+00:00",
+        "time": "2018-03-23T18:04:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -273,22 +273,22 @@
     },
     {
         "name": "dusterio/lumen-passport",
-        "version": "0.2.6",
-        "version_normalized": "0.2.6.0",
+        "version": "0.2.0",
+        "version_normalized": "0.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/dusterio/lumen-passport.git",
-            "reference": "e3a9e71e9da155c9630d623f0d5e5fc73c355cbc"
+            "reference": "c70a5974924429083c44e22a25cf7726def01f24"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dusterio/lumen-passport/zipball/e3a9e71e9da155c9630d623f0d5e5fc73c355cbc",
-            "reference": "e3a9e71e9da155c9630d623f0d5e5fc73c355cbc",
+            "url": "https://api.github.com/repos/dusterio/lumen-passport/zipball/c70a5974924429083c44e22a25cf7726def01f24",
+            "reference": "c70a5974924429083c44e22a25cf7726def01f24",
             "shasum": ""
         },
         "require": {
-            "illuminate/database": "~5.3|~5.4|~5.5|~5.6",
-            "illuminate/support": "~5.3|~5.4|~5.5|~5.6",
+            "illuminate/database": "~5.3|~5.4",
+            "illuminate/support": "~5.3|~5.4",
             "laravel/passport": ">=0.2.2",
             "php": ">=5.6.4"
         },
@@ -297,7 +297,7 @@
             "fzaninotto/faker": "~1.4",
             "phpunit/phpunit": "~5.0"
         },
-        "time": "2018-02-19T04:39:28+00:00",
+        "time": "2017-05-10T14:00:58+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -414,7 +414,7 @@
         ],
         "authors": [
             {
-                "name": "Francois Zaninotto"
+                "name": "François Zaninotto"
             }
         ],
         "description": "Faker is a PHP library that generates fake data for you.",
@@ -2536,17 +2536,17 @@
     },
     {
         "name": "nesbot/carbon",
-        "version": "1.24.2",
-        "version_normalized": "1.24.2.0",
+        "version": "1.25.0",
+        "version_normalized": "1.25.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/briannesbitt/Carbon.git",
-            "reference": "bba6c6e410c6b4317e37a9474aeaa753808c3875"
+            "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bba6c6e410c6b4317e37a9474aeaa753808c3875",
-            "reference": "bba6c6e410c6b4317e37a9474aeaa753808c3875",
+            "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cbcf13da0b531767e39eb86e9687f5deba9857b4",
+            "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4",
             "shasum": ""
         },
         "require": {
@@ -2557,7 +2557,7 @@
             "friendsofphp/php-cs-fixer": "~2",
             "phpunit/phpunit": "^4.8.35 || ^5.7"
         },
-        "time": "2018-03-10T10:10:14+00:00",
+        "time": "2018-03-19T15:50:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
