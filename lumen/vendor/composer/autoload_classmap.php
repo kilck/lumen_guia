@@ -6,9 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddLatLongToAddresses' => $baseDir . '/database/migrations/2018_05_16_171426_add_lat_long_to_addresses.php',
+    'AddPhoneAndPhoneCountToRestaurants' => $baseDir . '/database/migrations/2018_05_20_031818_add_phone_and_phone_count_to_restaurants.php',
+    'AddPhotoToDishesTable' => $baseDir . '/database/migrations/2018_05_05_192007_add_photo_to_dishes_table.php',
     'AddPhotoToRestaurantesTable' => $baseDir . '/database/migrations/2018_03_24_123216_add_photo_to_restaurantes_table.php',
+    'AddUserIdToRestaurants' => $baseDir . '/database/migrations/2018_04_27_180519_add_user_id_to_restaurants.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'CreateAddressesTable' => $baseDir . '/database/migrations/2018_05_02_171736_create_addresses_table.php',
     'CreateCategoriesRestaurantsTable' => $baseDir . '/database/migrations/2018_03_15_004904_create_categories_restaurants_table.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2018_03_15_004618_create_categories_table.php',
     'CreateDishVotesTable' => $baseDir . '/database/migrations/2018_03_15_004814_create_dish_votes_table.php',

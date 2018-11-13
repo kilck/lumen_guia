@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\User;
+use App\Restaurant;
+use App\Policies\RestaurantPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -35,5 +37,7 @@ class AuthServiceProvider extends ServiceProvider
                 return User::where('api_token', $request->input('api_token'))->first();
             }
         });
+        \Gate::policy(Restaurant::class, RestaurantPolicy::class);
+
     }
 }

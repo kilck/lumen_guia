@@ -30,4 +30,14 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+
+    public function restaurant()
+    {
+        return $this->hasOne('App\Restaurant');
+    }
+
+    public function  oauthAccessToken()
+    {
+        return $this->hasMany('\App\OauthAccessToken');
+    }
 }

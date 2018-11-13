@@ -146,14 +146,14 @@ module.exports = {
   },
   "entry": {
     "main": [
-      "./src\\main.ts"
+      "./src/main.ts"
     ],
     "polyfills": [
-      "./src\\polyfills.ts"
+      "./src/polyfills.ts"
     ],
     "styles": [
-      "./node_modules\\materialize-css\\dist\\css\\materialize.css",
-      "./src\\styles.css"
+      "./node_modules/materialize-css/dist/css/materialize.css",
+      "./src/styles.css"
     ]
   },
   "output": {
@@ -186,8 +186,8 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.css$/,
         "use": [
@@ -206,8 +206,8 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -234,8 +234,8 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.less$/,
         "use": [
@@ -260,8 +260,8 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.styl$/,
         "use": [
@@ -287,8 +287,8 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.css$/,
         "use": [
@@ -308,8 +308,8 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -337,8 +337,8 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.less$/,
         "use": [
@@ -364,8 +364,8 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "node_modules\\materialize-css\\dist\\css\\materialize.css"),
-          path.join(process.cwd(), "src\\styles.css")
+          path.join(process.cwd(), "node_modules/materialize-css/dist/css/materialize.css"),
+          path.join(process.cwd(), "src/styles.css")
         ],
         "test": /\.styl$/,
         "use": [
@@ -401,7 +401,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
-      Hammer : "hammerjs/hammer"
+      Hammer: "hammerjs/hammer"
     }),
     new NoEmitOnErrorsPlugin(),
     new ScriptsWebpackPlugin({
@@ -409,17 +409,17 @@ module.exports = {
       "sourceMap": true,
       "filename": "scripts.bundle.js",
       "scripts": [
-        "C:\\projetos\\lumen\\lumen_guia\\rest-painel\\node_modules\\jquery\\dist\\jquery.js",
-        "C:\\projetos\\lumen\\lumen_guia\\rest-painel\\node_modules\\materialize-css\\dist\\js\\materialize.js"
+        "./node_modules/jquery/dist/jquery.js",
+        "./node_modules/materialize-css/dist/js/materialize.js"
       ],
-      "basePath": "C:\\projetos\\lumen\\lumen_guia\\rest-painel"
+      "basePath": "./"
     }),
     new CopyWebpackPlugin([
       {
         "context": "src",
         "to": "",
         "from": {
-          "glob": "assets\\**\\*",
+          "glob": "assets/**/*",
           "dot": true
         }
       },
@@ -448,7 +448,7 @@ module.exports = {
     }),
     new NamedLazyChunksWebpackPlugin(),
     new HtmlWebpackPlugin({
-      "template": "./src\\index.html",
+      "template": "./src/index.html",
       "filename": "./index.html",
       "hash": false,
       "inject": true,
@@ -514,10 +514,10 @@ module.exports = {
       "mainPath": "main.ts",
       "platform": 0,
       "hostReplacementPaths": {
-        "environments\\environment.ts": "environments\\environment.ts"
+        "environments/environment.ts": "environments/environment.prod.ts"
       },
       "sourceMap": true,
-      "tsConfigPath": "src\\tsconfig.app.json",
+      "tsConfigPath": "src/tsconfig.app.json",
       "skipCodeGeneration": true,
       "compilerOptions": {}
     })

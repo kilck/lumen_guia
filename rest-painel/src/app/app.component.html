@@ -1,26 +1,48 @@
+<ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background lime">
+
+      </div>
+    </div></li>
+    <li *ngIf="me === null"><a  [routerLink]="['/login']">Acessar</a></li>
+
+    <li *ngIf="me !== null" [routerLinkActive]="[active]"><a [routerLink]="['/dashboard']"><i class="material-icons">dashboard</i>Painel</a></li>
+    <li *ngIf="me !== null" [routerLinkActive]="[active]"><a [routerLink]="['/edit']"><i class="material-icons">edit_location</i>Dados</a></li>
+    <li *ngIf="me !== null" [routerLinkActive]="[active]"><a [routerLink]="['/dishes']"><i class="material-icons">apps</i>Pratos</a></li>
+    <li ><div class="divider"></div></li>
+    <li *ngIf="me !== null" [routerLinkActive]="[active]"><a  class="subheader">Minha conta</a></li>
+    <li *ngIf="me !== null" [routerLinkActive]="[active]"><a [routerLink]="['/profile']"><i class="material-icons">account_circle</i>Editar meus dados</a></li>
+    <li *ngIf="me !== null"><a [routerLink]="['/password']"><i class="material-icons">security</i>Trocar senha</a></li>
+    <li *ngIf="me !== null"><a [routerLink]="['/logout']"><i class="material-icons">cancel</i>sair</a></li>
+  </ul>
+
 <header>
   <nav>
     <div class="nav-wrapper amber">
       <div class="row">
-        
-          <a href="#" class="brand-logo">Painel</a>
+        <div class="col s12">
+          <a [routerLink]="['/']" class="brand-logo">Painel</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>
-              <a href="sass.html">Sass</a>
-            </li>
-          </ul>        
+            <li><a  data-activates="slide-out" id="showMenu" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
 </header>
+
 <main>
-  
+    <router-outlet></router-outlet>
+
 </main>
-<footer class="page-footer amber lighten3">
-  <div class="footer-copyright">
+
+<footer class="page-footer amber">
     <div class="container">
-      © 2018 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+
     </div>
-  </div>
-</footer>
+    <div class="footer-copyright ">
+      <div class="container">
+      © 2018 Copyright Text
+      </div>
+    </div>
+  </footer>

@@ -127,9 +127,14 @@ class ComposerStaticInit1ba1fff5870d650689580306179ceace
             'Cron\\' => 5,
             'Carbon\\' => 7,
         ),
+        'B' => 
+        array (
+            'Barryvdh\\Cors\\' => 14,
+        ),
         'A' => 
         array (
             'Aws\\' => 4,
+            'Asm89\\Stack\\' => 12,
             'App\\' => 4,
         ),
     );
@@ -393,9 +398,17 @@ class ComposerStaticInit1ba1fff5870d650689580306179ceace
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
+        'Barryvdh\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
         'Aws\\' => 
         array (
             0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
+        ),
+        'Asm89\\Stack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
         ),
         'App\\' => 
         array (
@@ -418,12 +431,24 @@ class ComposerStaticInit1ba1fff5870d650689580306179ceace
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'A' => 
+        array (
+            'AnthonyMartin' => 
+            array (
+                0 => __DIR__ . '/..' . '/anthonymartin/geo-location/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
+        'AddLatLongToAddresses' => __DIR__ . '/../..' . '/database/migrations/2018_05_16_171426_add_lat_long_to_addresses.php',
+        'AddPhoneAndPhoneCountToRestaurants' => __DIR__ . '/../..' . '/database/migrations/2018_05_20_031818_add_phone_and_phone_count_to_restaurants.php',
+        'AddPhotoToDishesTable' => __DIR__ . '/../..' . '/database/migrations/2018_05_05_192007_add_photo_to_dishes_table.php',
         'AddPhotoToRestaurantesTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_24_123216_add_photo_to_restaurantes_table.php',
+        'AddUserIdToRestaurants' => __DIR__ . '/../..' . '/database/migrations/2018_04_27_180519_add_user_id_to_restaurants.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+        'CreateAddressesTable' => __DIR__ . '/../..' . '/database/migrations/2018_05_02_171736_create_addresses_table.php',
         'CreateCategoriesRestaurantsTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_15_004904_create_categories_restaurants_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_15_004618_create_categories_table.php',
         'CreateDishVotesTable' => __DIR__ . '/../..' . '/database/migrations/2018_03_15_004814_create_dish_votes_table.php',

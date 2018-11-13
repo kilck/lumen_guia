@@ -4,5 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  server_url: 'http://api.matheus.bhz.br',
+  client_id: '2',
+  client_secret: 'ft9ZEJsyUfAMU3SmOg37KUbNA70El6ORX7UCCHN8'
 };
